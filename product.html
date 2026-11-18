@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZ shop</title>
+    <script src="https://cdn.jsdelivr.net/npm/
+@tailwindcss/browser@4"></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main class="max-w-6xl mx-auto px-6 py-8">
+        <div class="grid md:grid-cols-2 gap-10">
+            <!-- ЗҮҮН: зургийн цомог -->
+            <div class="grid grid-cols-5 gap-4">
+                <div class="flex flex-col gap-3">
+                    <img src="https://cdn.zochil.shop/c506cfa9-7d0b-4c04-9e00-4e12e37b68e0_t700.png" class="thumb w-full
+rounded-lg cursor-pointer
+border-2 border-sky-400">
+                    <img src="https://cdn.zochil.shop/bcca85a5-4cf0-454d-9de6-13496c3163a8_t700.jpg" class="thumb w-full
+rounded-lg cursor-pointer
+border-2 border-transparent">
+<img src="https://cdn.zochil.shop/61e94758-1170-4a86-8593-3de2192c9902_t700.jpg" class="thumb w-full
+rounded-lg cursor-pointer
+border-2 border-transparent">
+                </div>
+                <img id="main-image" src="https://cdn.zochil.shop/7bc55ace-c7ed-4cb2-b778-a6661ad5efde_t700.png" class="col-span-4 w-full rounded-2xl">
+            </div>
+            <!-- БАРУУН: мэдээлэл (дараагийн алхам) -->
+            <div>
+                <h1 class="text-3xl font-semibold">Jersey / Wild Mind /</h1>
+                <p class="text-3xl font-bold mt-4">150,000₮</p>
+                <p class="text-sm font-semibold mt-6 mb-2">Хэмжээ:</p>
+                <div class="flex flex-wrap gap-2">
+                    <button class="size-btn w-11 h-11 rounded-full
+border border-slate-700 text-sm
+hover:border-sky-400">S</button>
+                    <button class="size-btn w-11 h-11 rounded-full
+border border-slate-700 text-sm
+hover:border-sky-400">M</button>
+                    <button class="size-btn w-11 h-11 rounded-full
+border border-slate-700 text-sm
+hover:border-sky-400">L</button>
+                    <button class="size-btn w-11 h-11 rounded-full
+border border-slate-700 text-sm
+hover:border-sky-400">XL</button>
+                    <button class="size-btn w-11 h-11 rounded-full
+border border-slate-700 text-sm
+hover:border-sky-400">2XL</button>
+                    <!-- M, L, XL, 2XL мөн адил -->
+                </div>
+                <div class="inline-flex items-center border
+border-slate-700 rounded-lg mt-6">
+                    <button id="minus" class="w-11 h-11">−</button>
+                    <span id="qty" class="w-12 text-center">1</span>
+                    <button id="plus" class="w-11 h-11">+</button>
+                </div>
+                <div class="flex gap-3 mt-4">
+                    <button id="add-to-cart" class="flex-1 border
+border-slate-700 py-3 rounded-lg">🛒 Сагслах</button>
+                    <button class="flex-1 bg-sky-400 text-slate-950
+font-semibold py-3 rounded-lg">Худалдан авах</button>
+                </div>
+                <p id="message" class="text-sm text-sky-400 mt-4"></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
